@@ -3,9 +3,160 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gujarati Trader</title>
+<title>TRADE WITH MOHIT AGARWAL</title>
 
-<!-- ================= META PIXEL ================= -->
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:radial-gradient(circle at top,#020617,#020617 60%,#000);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+}
+
+.card{
+    width:92%;
+    max-width:440px;
+    background:rgba(255,255,255,0.06);
+    backdrop-filter:blur(20px);
+    border-radius:32px;
+    padding:40px 26px 36px;
+    text-align:center;
+    box-shadow:
+      0 35px 90px rgba(99,102,241,0.35),
+      inset 0 0 0 1px rgba(255,255,255,0.08);
+}
+
+/* LOGO */
+.logo-wrap{
+    width:130px;
+    height:130px;
+    margin:0 auto 18px;
+    border-radius:50%;
+    background:#000;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:
+      0 0 25px rgba(59,130,246,0.9),
+      0 0 55px rgba(239,68,68,0.8);
+}
+
+.logo-wrap img{
+    width:82%;
+    height:82%;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* TITLE */
+h1{
+    font-size:24px;
+    font-weight:700;
+    letter-spacing:1.4px;
+    margin-bottom:8px;
+    background:linear-gradient(90deg,#3b82f6,#ef4444,#3b82f6);
+    background-size:200% auto;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation:neonFlow 3s linear infinite;
+    text-shadow:
+      0 0 12px rgba(59,130,246,0.8),
+      0 0 22px rgba(239,68,68,0.7);
+}
+
+@keyframes neonFlow{
+    to{background-position:200% center;}
+}
+
+.sub{
+    font-size:14px;
+    color:#c7d2fe;
+    margin-bottom:28px;
+}
+
+/* FEATURES */
+.features{
+    text-align:left;
+    margin-bottom:34px;
+}
+
+.feature{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    font-size:15px;
+    margin-bottom:16px;
+    color:#e5e7eb;
+}
+
+.feature i{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,#2563eb,#ef4444);
+    box-shadow:0 0 18px rgba(99,102,241,0.9);
+}
+
+/* BUTTON */
+.telegram-btn{
+    width:100%;
+    padding:18px;
+    font-size:16px;
+    font-weight:600;
+    color:#fff;
+    border:none;
+    border-radius:18px;
+    background:linear-gradient(135deg,#2563eb,#ef4444,#2563eb);
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    box-shadow:0 0 35px rgba(239,68,68,0.9);
+}
+
+.telegram-btn i{
+    font-size:21px;
+}
+
+/* FOOTER */
+.stars{
+    margin:26px 0 8px;
+    color:#facc15;
+}
+
+.rating{
+    font-size:13px;
+    color:#c7d2fe;
+    margin-bottom:22px;
+}
+
+.disclaimer{
+    font-size:11.5px;
+    color:#9ca3af;
+    line-height:1.6;
+}
+</style>
+
+<!-- META PIXEL -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -15,179 +166,71 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-  
-fbq('init', '2086155282203727');
-fbq('track', 'PageView');
-  
+
+fbq('init','2086155282203727');
+
+/* PageView – ONLY ONCE */
+if(!localStorage.getItem('pageview_fired')){
+    fbq('track','PageView');
+    localStorage.setItem('pageview_fired','yes');
+}
 </script>
+
 <noscript>
-  <img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2086155282203727&ev=PageView&noscript=1"
-/></noscript>
-<!-- ================= END META PIXEL ================= -->
-
-<style>
-*{box-sizing:border-box}
-body{
- margin:0;
- font-family:Segoe UI,Arial,sans-serif;
- background:linear-gradient(180deg,#eef2ff,#f8fafc);
- color:#111;
- text-align:center;
-}
-.container{
- max-width:420px;
- margin:28px auto;
- background:#ffffff;
- border-radius:22px;
- padding:30px 18px 40px;
- box-shadow:0 25px 60px rgba(0,0,0,.12);
-}
-.logo{
- width:140px;
- height:140px;
- border-radius:50%;
- margin:10px auto 14px;
- box-shadow:0 12px 28px rgba(225,31,25);
- overflow:hidden;
- border:4px solid #ffffff;
-}
-.logo img{
- width:100%;
- height:100%;
- object-fit:cover;
-}
-h1{
- font-size:30px;
- font-weight:900;
- margin:10px 0 6px;
- letter-spacing:.6px;
-}
-.subs{
- font-size:14px;
- color:#6b7280;
- margin-bottom:18px;
-}
-.info{
- font-size:15px;
- line-height:1.8;
- color:#374151;
- margin:10px 0 26px;
-}
-.info div{margin:7px 0}
-
-/* BUTTON */
-.join-btn{
- display:flex;
- align-items:center;
- justify-content:center;
- gap:10px;
- width:100%;
- max-width:360px;
- margin:0 auto 20px;
- padding:17px;
- font-size:18px;
- font-weight:900;
- color:#fff;
- text-decoration:none;
- border-radius:14px;
- background:linear-gradient(#ff0000,#229ED9,#008000);
- box-shadow:0 14px 32px rgba(34,158,217,.45);
- transition:.25s ease;
-}
-.join-btn:hover{
- transform:translateY(-2px);
- box-shadow:0 18px 38px rgba(34,158,217,.55);
-}
-
-/* TELEGRAM ICON */
-.tg-icon{
- width:22px;
- height:22px;
- fill:#fff;
-}
-
-.stars{
- font-size:20px;
- color:#f59e0b;
- margin-bottom:8px;
-}
-.trust{
- font-size:13px;
- color:#6b7280;
- margin-bottom:18px;
-}
-.footer{
- font-size:12px;
- color:#9ca3af;
- line-height:1.6;
-}
-</style>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2086155282203727&ev=PageView&noscript=1"/>
+</noscript>
 </head>
 
 <body>
 
-<div class="container">
+<div class="card">
 
-<div class="logo">
- <img src="https://uploads.onecompiler.io/446vwj75z/448qqnmcq/WhatsApp%20Image%202025-12-26%20at%2018.36.44.jpeg" alt="TRADER MOHIT">
-</div>
+    <div class="logo-wrap">
+        <img src="https://uploads.onecompiler.io/446vwj75z/448qqnmcq/WhatsApp%20Image%202025-12-26%20at%2018.36.44.jpeg" alt="Trade With Mohit Agarwal">
+    </div>
 
-<h1>👑MOHIT AGARWAL👑</h1>
-<h1>👑Trader Mohit👑</h1>
-<div class="subs">50,000+ learners • Trusted community</div>
-<p>SEBI REG NO – INH000011954</p>
-</div>
-<div class="info">
- <div>📊 <b>Market Education & Chart Reading</b></div>
- <div>📈 Nifty • BankNifty • Stock Analysis</div>
- <div>🛡️ Risk Management & Discipline</div>
- <div>🎯 Learn with clarity, not false promises</div>
-</div>
+    <h1>TRADE WITH MOHIT AGARWAL</h1>
+    <div class="sub">Elite Trading Education • Premium Community</div>
 
-<a class="join-btn" id="joinBtn"
- href="https://t.me/+zrnr97SHlsAyYjZl"
- target="_blank">
+    <div class="features">
+        <div class="feature"><i class="fa-solid fa-chart-line"></i> Market Education & Chart Reading</div>
+        <div class="feature"><i class="fa-solid fa-chart-pie"></i> Nifty • BankNifty • Stock Analysis</div>
+        <div class="feature"><i class="fa-solid fa-shield-halved"></i> Risk Management & Discipline</div>
+        <div class="feature"><i class="fa-solid fa-gem"></i> No Fake Tips • Only Knowledge</div>
+    </div>
 
- <!-- TELEGRAM SVG ICON -->
- <svg class="tg-icon" viewBox="0 0 240 240" aria-hidden="true">
-   <path d="M120 0C53.7 0 0 53.7 0 120s53.7 120 120 120 120-53.7 120-120S186.3 0 120 0zm58.7 82.1-19.9 94c-1.5 6.7-5.6 8.4-11.4 5.2l-31.6-23.3-15.2 14.6c-1.7 1.7-3.1 3.1-6.3 3.1l2.2-31.8 57.9-52.3c2.5-2.2-.6-3.5-3.9-1.3l-71.6 45.1-30.8-9.6c-6.7-2.1-6.8-6.7 1.4-9.9l120.4-46.4c5.6-2 10.5 1.3 8.8 9.9z"/>
- </svg>
+    <button class="telegram-btn" onclick="joinTelegram()">
+        <i class="fa-brands fa-telegram"></i>
+        JOIN PREMIUM TELEGRAM
+    </button>
 
- JOIN TELEGRAM CHANNEL
-</a>
+    <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
 
-<div class="stars">⭐⭐⭐⭐⭐</div>
-<div class="trust">Rated highly by community learners</div>
+    <div class="rating">Trusted by serious learners</div>
 
-<div class="footer">
-Educational purpose only. No tips, no guarantees.<br>
-Market participation involves risk.
-</div>
+    <div class="disclaimer">
+        Educational purpose only. No tips, no guarantees.<br>
+        Market participation involves financial risk.
+    </div>
 
 </div>
 
-<!-- ===== CUSTOM TELEGRAM JOIN EVENT ===== -->
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const joinBtn = document.getElementById("joinBtn");
-  if (joinBtn) {
-    joinBtn.addEventListener("click", function () {
-      if (typeof fbq === 'function') {
-        fbq('trackCustom', 'TelegramJoin', {}, {
-          eventID: 'tg_' + Date.now()
-        });
-      }
-      setTimeout(() => {
-        this.style.pointerEvents = "none";
-      }, 300);
-    });
-  }
-});
+function joinTelegram(){
+    if(!localStorage.getItem('telegram_subscribed')){
+        fbq('track','Subscribe');
+        localStorage.setItem('telegram_subscribed','yes');
+    }
+    window.location.href="https://t.me/+zrnr97SHlsAyYjZl";
+}
 </script>
 
 </body>
 </html>
-
-
-
