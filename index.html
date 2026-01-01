@@ -1,215 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Pankaj Bhardwaj Trading Community</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Pankaj Bhardwaj Trading Community</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ================= META PIXEL ================= -->
-<script>
-!function(f,b,e,v,n,t,s){
-if(f.fbq)return;n=f.fbq=function(){
-n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];
-t=b.createElement(e);t.async=!0;
-t.src=v;
-s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s);
-}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  <!-- =============== META PIXEL =============== -->
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq) return;
+      n = f.fbq = function(){
+        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+      };
+      if(!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = true;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e); t.async = true;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '2086155282203727');
-fbq('track', 'PageView');
-</script>
+    // yahi pixel id Ads Manager se copy ki hai to sahi hai
+    fbq('init', '2086155282203727');
+    fbq('track', 'PageView');
+  </script>
 
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2086155282203727&ev=PageView&noscript=1"/>
-</noscript>
-<!-- ================= END META PIXEL ================= -->
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=2086155282203727&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- ============ END META PIXEL ============ -->
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins}
-body{
-  background:radial-gradient(circle at top,#111,#000);
-  color:#fff;
-  display:flex;
-  justify-content:center;
-  padding-bottom:100px;
-}
-.container{
-  max-width:420px;
-  padding:26px 22px 40px;
-  text-align:center;
-}
-.brand{
-  font-size:26px;
-  color:#f5c77a;
-  letter-spacing:1px;
-  animation:glow 2.5s infinite alternate;
-}
-@keyframes glow{
-  from{text-shadow:0 0 6px #f5c77a}
-  to{text-shadow:0 0 18px #f5c77a}
-}
-.tagline{
-  font-size:14px;
-  margin-top:6px;
-  color:#ddd;
-}
-.timer{
-  margin:16px 0;
-  color:#ffb84d;
-  font-weight:600;
-  font-size:15px;
-}
-.profile{
-  background:linear-gradient(145deg,#151515,#0a0a0a);
-  border-radius:18px;
-  padding:22px;
-  margin:18px 0;
-  box-shadow:0 0 25px rgba(245,199,122,.15);
-}
-.profile img{
-  width:110px;
-  border-radius:14px;
-  border:2px solid #f5c77a;
-  margin-bottom:10px;
-}
-.profile h2{
-  color:#f5c77a;
-  font-size:18px;
-}
-.profile p{
-  font-size:13px;
-  color:#bbb;
-}
-.benefits{
-  margin:16px 0;
-  font-size:14px;
-  line-height:1.9;
-}
-.cta{
-  display:block;
-  margin:22px auto;
-  padding:14px;
-  width:100%;
-  border-radius:40px;
-  text-decoration:none;
-  font-size:16px;
-  font-weight:700;
-  color:#000;
-  background:linear-gradient(135deg,#f5c77a,#ffd98e);
-  transition:.3s;
-}
-.cta:hover{
-  transform:scale(1.03);
-  box-shadow:0 0 18px rgba(245,199,122,.5);
-}
-.sticky-cta{
-  position:fixed;
-  bottom:12px;
-  left:50%;
-  transform:translateX(-50%);
-  width:90%;
-  z-index:999;
-}
-.trust{
-  font-size:13px;
-  margin-bottom:14px;
-  color:#ccc;
-}
-.disclaimer{
-  background:#111;
-  border-radius:12px;
-  padding:12px;
-  font-size:11px;
-  color:#aaa;
-  border:1px solid #222;
-}
-.footer{
-  margin-top:18px;
-  font-size:12px;
-  color:#777;
-}
-.footer a{
-  color:#f5c77a;
-  text-decoration:none;
-}
-</style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    * { margin:0; padding:0; box-sizing:border-box; font-family:Poppins, sans-serif; }
+    body {
+      background:radial-gradient(circle at top,#111,#000);
+      color:#fff;
+      display:flex;
+      justify-content:center;
+      padding-bottom:100px;
+    }
+    .container {
+      max-width:420px;
+      padding:26px 22px 40px;
+      text-align:center;
+    }
+    .brand {
+      font-size:26px;
+      color:#f5c77a;
+      letter-spacing:1px;
+      animation:glow 2.5s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow:0 0 6px #f5c77a; }
+      to   { text-shadow:0 0 18px #f5c77a; }
+    }
+    .tagline {
+      font-size:14px;
+      margin-top:6px;
+      color:#ddd;
+    }
+    .timer {
+      margin:16px 0;
+      color:#ffb84d;
+      font-weight:600;
+      font-size:15px;
+    }
+    .profile {
+      background:linear-gradient(145deg,#151515,#0a0a0a);
+      border-radius:18px;
+      padding:22px;
+      margin:18px 0;
+      box-shadow:0 0 25px rgba(245,199,122,.15);
+    }
+    .profile img {
+      width:110px;
+      border-radius:14px;
+      border:2px solid #f5c77a;
+      margin-bottom:10px;
+    }
+    .profile h2 {
+      color:#f5c77a;
+      font-size:18px;
+    }
+    .profile p {
+      font-size:13px;
+      color:#bbb;
+    }
+    .benefits {
+      margin:16px 0;
+      font-size:14px;
+      line-height:1.9;
+    }
+    .cta {
+      display:block;
+      margin:22px auto;
+      padding:14px;
+      width:100%;
+      border-radius:40px;
+      text-decoration:none;
+      font-size:16px;
+      font-weight:700;
+      color:#000;
+      background:linear-gradient(135deg,#f5c77a,#ffd98e);
+      transition:.3s;
+      text-align:center;
+    }
+    .cta:hover {
+      transform:scale(1.03);
+      box-shadow:0 0 18px rgba(245,199,122,.5);
+    }
+    .sticky-cta {
+      position:fixed;
+      bottom:12px;
+      left:50%;
+      transform:translateX(-50%);
+      width:90%;
+      z-index:999;
+    }
+    .trust {
+      font-size:13px;
+      margin-bottom:14px;
+      color:#ccc;
+    }
+    .disclaimer {
+      background:#111;
+      border-radius:12px;
+      padding:12px;
+      font-size:11px;
+      color:#aaa;
+      border:1px solid #222;
+    }
+    .footer {
+      margin-top:18px;
+      font-size:12px;
+      color:#777;
+    }
+    .footer a {
+      color:#f5c77a;
+      text-decoration:none;
+    }
+  </style>
 </head>
 
 <body>
-<div class="container">
+  <div class="container">
 
-<h1 class="brand">PANKAJ BHARDWAJ</h1>
-<p class="tagline">
-💎 Smart Trading Education | स्मार्ट ट्रेडिंग शिक्षा 💎
-</p>
+    <h1 class="brand">PANKAJ BHARDWAJ</h1>
+    <p class="tagline">
+      💎 Smart Trading Education | स्मार्ट ट्रेडिंग शिक्षा 💎
+    </p>
 
-<div class="timer">
-⏳ Free Access Ends In <span id="countdown">02:00</span>
-</div>
+    <div class="timer">
+      ⏳ Free Access Ends In <span id="countdown">02:00</span>
+    </div>
 
-<div class="profile">
-<img src="https://uploads.onecompiler.io/445e5df86/44796xsaj/1325.jpg" alt="Pankaj Bhardwaj">
-<h2>Pankaj Bhardwaj</h2>
-<p>📊 Stock Market Education Community</p>
-</div>
+    <div class="profile">
+      <img src="https://uploads.onecompiler.io/445e5df86/44796xsaj/1325.jpg"
+           alt="Pankaj Bhardwaj">
+      <h2>Pankaj Bhardwaj</h2>
+      <p>📊 Stock Market Education Community</p>
+    </div>
 
-<div class="benefits">
-📈 Market Structure Samjho (समझो)<br>
-🧠 Risk Management Sikho (सीखो)<br>
-🎯 Discipline & Psychology Master Karo
-</div>
+    <div class="benefits">
+      📈 Market Structure Samjho (समझो)<br>
+      🧠 Risk Management Sikho (सीखो)<br>
+      🎯 Discipline & Psychology Master Karo
+    </div>
 
-<div class="trust">
-🔒 100% Free | 🎓 Education Only | 🤝 No Profit Promises
-</div>
+    <div class="trust">
+      🔒 100% Free | 🎓 Education Only | 🤝 No Profit Promises
+    </div>
 
-<div class="disclaimer">
-⚠️ Disclaimer: This is only for educational & informational purposes.<br>
-Stock market trading involves risk.<br>
-Apne research ke basis par decision lein.
-</div>
+    <div class="disclaimer">
+      ⚠️ Disclaimer: This is only for educational & informational purposes.<br>
+      Stock market trading involves risk.<br>
+      Apne research ke basis par decision lein.
+    </div>
 
-<div class="footer">
-<a href="#">Privacy Policy</a> | <a href="#">Contact Us</a>
-<p>✨ Powered by Nexgroww</p>
-</div>
+    <div class="footer">
+      <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a>
+      <p>✨ Powered by Nexgroww</p>
+    </div>
 
-</div>
+  </div>
 
-<!-- ================= COUNTDOWN ================= -->
-<script>
-let time = 120;
-const el = document.getElementById("countdown");
-setInterval(()=>{
-  if(time <= 0) return;
-  let m = Math.floor(time/60);
-  let s = time % 60;
-  el.innerHTML = `${m}:${s<10?'0':''}${s}`;
-  time--;
-},1000);
-</script>
+  <!-- ============= COUNTDOWN ============= -->
+  <script>
+    (function(){
+      let time = 120; // 2 minutes
+      const el = document.getElementById("countdown");
 
-<!-- ================= SUBSCRIBE TRACK + REDIRECT ================= -->
-<script>
-function trackSubscribe(){
-  fbq('track','Subscribe');
+      function updateTimer() {
+        if (time < 0) return;
+        let m = Math.floor(time / 60);
+        let s = time % 60;
+        el.textContent = m + ":" + (s < 10 ? "0" : "") + s;
+        time--;
+      }
 
-  setTimeout(()=>{
-    window.location.href="https://t.me/+WHozR7giR0AyM2I9";
-  },1000);
-}
-</script>
+      updateTimer();
+      setInterval(updateTimer, 1000);
+    })();
+  </script>
 
-<!-- ================= STICKY BUTTON ================= -->
-<a href="javascript:void(0)" class="cta sticky-cta" onclick="trackSubscribe()">
-🚀 JOIN FREE COMMUNITY
-</a>
+  <!-- ========== SUBSCRIBE TRACK + REDIRECT (1 per browser) ========== -->
+  <script>
+    // Simple browser-level user id
+    if (!localStorage.getItem('pb_uid')) {
+      localStorage.setItem('pb_uid', Date.now().toString());
+    }
+
+    function trackSubscribe() {
+      // Agar is browser se pehle hi ek baar subscribe fire ho chuka hai
+      if (localStorage.getItem('pb_subscribe_fired') === '1') {
+        // Dobara event nahi bhejna, sirf redirect
+        window.location.href = "https://t.me/+WHozR7giR0AyM2I9";
+        return;
+      }
+
+      // Pehli baar click → event fire karo
+      if (typeof fbq === "function") {
+        fbq('track', 'Subscribe', {
+          event_id: 'pb_subscribe_' + localStorage.getItem('pb_uid')
+        });
+      }
+
+      // Flag set: is browser se ek subscribe count ho chuka hai
+      localStorage.setItem('pb_subscribe_fired', '1');
+
+      setTimeout(function () {
+        window.location.href = "https://t.me/+WHozR7giR0AyM2I9";
+      }, 800);
+    }
+  </script>
+
+  <!-- ============= STICKY BUTTON ============= -->
+  <a href="javascript:void(0)" class="cta sticky-cta" onclick="trackSubscribe()">
+    🚀 JOIN FREE COMMUNITY
+  </a>
 
 </body>
 </html>
+
