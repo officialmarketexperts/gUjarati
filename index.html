@@ -12,11 +12,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
     min-height:100vh;
@@ -28,34 +24,27 @@ body{
     color:#fff;
 }
 
-/* ===== CARD ===== */
 .card{
     width:92%;
     max-width:440px;
     padding:42px 28px 36px;
     border-radius:32px;
-    background:linear-gradient(
-        180deg,
-        rgba(255,255,255,0.12),
-        rgba(255,255,255,0.03)
-    );
+    background:linear-gradient(180deg,rgba(255,255,255,0.12),rgba(255,255,255,0.03));
     backdrop-filter:blur(18px);
     border:1px solid rgba(255,255,255,0.18);
     box-shadow:0 35px 90px rgba(0,0,0,0.65);
     text-align:center;
 }
 
-/* ===== LOGO ===== */
 .logo-wrap{
     width:130px;
     height:130px;
     margin:0 auto 20px;
     border-radius:50%;
-    background:radial-gradient(circle,#fff,#e5e7eb);
+    background:#fff;
     display:flex;
     align-items:center;
     justify-content:center;
-    animation:luxGlow 3s infinite alternate;
 }
 
 .logo-wrap img{
@@ -63,12 +52,6 @@ body{
     border-radius:50%;
 }
 
-@keyframes luxGlow{
-    0%{ box-shadow:0 0 18px rgba(212,175,55,0.5); }
-    100%{ box-shadow:0 0 48px rgba(212,175,55,1); }
-}
-
-/* ===== TITLE WITH KING ICONS ===== */
 .title{
     display:flex;
     align-items:center;
@@ -77,119 +60,48 @@ body{
     margin-bottom:10px;
 }
 
-.title i{
-    font-size:26px;
-    color:#facc15;
-    animation:kingGlow 2.5s infinite alternate;
-}
-
-@keyframes kingGlow{
-    0%{
-        text-shadow:0 0 8px rgba(250,204,21,0.6);
-        transform:scale(1);
-    }
-    100%{
-        text-shadow:0 0 22px rgba(250,204,21,1);
-        transform:scale(1.15);
-    }
-}
-
+.title i{color:#facc15;font-size:26px;}
 .title h1{
     font-family:'Playfair Display',serif;
     font-size:28px;
-    font-weight:700;
-    letter-spacing:1px;
 }
 
-/* ===== SUBTITLE ===== */
 .sub{
     font-size:14px;
     color:#d4d4d8;
     margin-bottom:28px;
 }
 
-/* ===== FEATURES ===== */
-.features{
-    text-align:left;
-    margin-bottom:32px;
-}
-
+.features{text-align:left;margin-bottom:32px;}
 .feature{
     display:flex;
-    align-items:center;
     gap:14px;
     font-size:15px;
     margin-bottom:16px;
 }
+.feature i{color:#facc15;}
 
-.feature i{
-    font-size:18px;
-    color:#facc15;
-    animation:iconPulse 2s infinite;
-}
-
-@keyframes iconPulse{
-    0%{transform:scale(1);}
-    50%{transform:scale(1.15);}
-    100%{transform:scale(1);}
-}
-
-/* ===== TELEGRAM BUTTON ===== */
 .telegram-btn{
     width:100%;
     padding:17px;
-    border:none;
     border-radius:18px;
     font-size:16px;
     font-weight:600;
     background:linear-gradient(135deg,#facc15,#fde047);
     color:#020617;
-    cursor:pointer;
     display:flex;
     align-items:center;
     justify-content:center;
     gap:12px;
-    box-shadow:0 0 28px rgba(250,204,21,0.75);
-    animation:btnPulse 1.6s infinite;
+    text-decoration:none;
 }
 
-.telegram-btn i{
-    font-size:22px;
-    animation:fly 1.2s infinite;
-}
-
-@keyframes btnPulse{
-    0%{transform:scale(1);}
-    50%{transform:scale(1.06);}
-    100%{transform:scale(1);}
-}
-
-@keyframes fly{
-    0%{transform:translateX(0);}
-    50%{transform:translateX(6px);}
-    100%{transform:translateX(0);}
-}
-
-/* ===== RATING ===== */
-.stars{
-    margin:22px 0 6px;
-    color:#facc15;
-}
-
-.rating{
-    font-size:13px;
-    color:#d4d4d8;
-    margin-bottom:20px;
-}
-
-/* ===== DISCLAIMER ===== */
-.disclaimer{
-    font-size:11.5px;
-    color:#a1a1aa;
-    line-height:1.6;
-}
+.stars{margin:22px 0 6px;color:#facc15;}
+.rating{font-size:13px;color:#d4d4d8;margin-bottom:20px;}
+.disclaimer{font-size:11.5px;color:#a1a1aa;}
 </style>
-   <!-- Meta Pixel Code -->
+
+<!-- ✅ META PIXEL CODE -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -202,22 +114,23 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '1289497666276158');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1289497666276158&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1289497666276158&ev=PageView&noscript=1"/>
+</noscript>
+<!-- ✅ META PIXEL END -->
+
 </head>
 
 <body>
 
 <div class="card">
 
-    <!-- LOGO -->
     <div class="logo-wrap">
-        <img src="https://uploads.onecompiler.io/446vwj75z/448qqnmcq/WhatsApp%20Image%202025-12-26%20at%2018.36.44.jpeg" alt="Zero To Hero">
+        <img src="https://uploads.onecompiler.io/446vwj75z/448qqnmcq/WhatsApp%20Image%202025-12-26%20at%2018.36.44.jpeg" alt="Logo">
     </div>
 
-    <!-- TITLE -->
     <div class="title">
         <i class="fa-solid fa-crown"></i>
         <h1>TRADE WITH MOHIT AGARWAL</h1>
@@ -233,21 +146,13 @@ src="https://www.facebook.com/tr?id=1289497666276158&ev=PageView&noscript=1"
         <div class="feature"><i class="fa-solid fa-gem"></i>No Hype • Only Skill & Clarity</div>
     </div>
 
-    <!-- TELEGRAM BUTTON -->
-    <button class="telegram-btn"
-        onclick="window.location.href='https://t.me/+zrnr97SHlsAyYjZl'">
+    <!-- ✅ TELEGRAM LINK -->
+    <a href="https://t.me/+zrnr97SHlsAyYjZl" target="_blank" class="telegram-btn">
         <i class="fa-brands fa-telegram"></i>
         JOIN TELEGRAM CHANNEL
-    </button>
+    </a>
 
-    <div class="stars">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-    </div>
-
+    <div class="stars">★★★★★</div>
     <div class="rating">Rated 5.0 by our learning community</div>
 
     <div class="disclaimer">
@@ -259,4 +164,3 @@ src="https://www.facebook.com/tr?id=1289497666276158&ev=PageView&noscript=1"
 
 </body>
 </html>
-
